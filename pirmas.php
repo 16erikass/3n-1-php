@@ -5,7 +5,9 @@ $iteracijos = 0;
 
 echo "Pradinis skaičius: $originalus_sk <br>";
 echo "Seka: ";
-// vykdomas ciklas iki 1
+
+//Ciklas veiks tol, kol skaičius taps 1
+
 while ($n != 1) {
 
 // spausdina skaiciu
@@ -13,9 +15,13 @@ while ($n != 1) {
 
     if ($n % 2 == 0) { // Lyginis
 
+     //Jei lyginis dalinama iš 2
+
     $n = $n / 2;
 
     } else { // Nelyginis
+
+        // Jei nelyginis  padauginama iš 3 ir pridedamas 1
 
     $n = ($n * 3 ) + 1;
 
